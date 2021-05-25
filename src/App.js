@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import GenericForm from "./components/GenericForm";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {};
+  }
+  render() {
+    return (
+      <div className="App">
+        <GenericForm
+          formElements={[
+            {
+              label: {
+                for: "testlabelfor",
+                text: "testlabeltext",
+              },
+              input: {
+                value: "testinputvalue",
+                type: "testinputtype",
+                id: "testinputid",
+              },
+            },
+          ]}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
