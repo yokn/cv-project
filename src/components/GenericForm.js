@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../styles/GenericForm.css';
 
 class GenericForm extends Component {
   constructor() {
@@ -17,11 +18,11 @@ class GenericForm extends Component {
   };
   render() {
     return (
-      <div className={this.props.className}>
+      <div id={this.props.id} className="GenericForm">
         <form onSubmit={this.onSubmitTask}>
           {this.props.formElements.map((formElement) => {
             return (
-              <div>
+              <div id={formElement.label.for} className="GenericFormElement">
                 <label htmlFor={formElement.label.for}>
                   {formElement.label.text}
                 </label>

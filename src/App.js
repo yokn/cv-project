@@ -11,17 +11,39 @@ class App extends Component {
     return (
       <div className="App">
         <GenericForm
-          className="testClassName"
+          id="general"
           formElements={[
             {
               label: {
-                for: "testlabelfor",
-                text: "testlabeltext",
+                for: "inputName",
+                text: "Name",
               },
               input: {
-                value: "testinputvalue",
-                type: "testinputtype",
-                id: "testinputid",
+                value: "",
+                type: "text",
+                id: "inputName",
+              },
+            },
+            {
+              label: {
+                for: "inputEmail",
+                text: "Email",
+              },
+              input: {
+                value: "",
+                type: "email",
+                id: "inputEmail",
+              },
+            },
+            {
+              label: {
+                for: "inputPhoneNumber",
+                text: "Phone Number",
+              },
+              input: {
+                value: "",
+                type: "number",
+                id: "inputPhoneNumber",
               },
             },
           ]}
