@@ -17,7 +17,7 @@ class GenericForm extends Component {
   };
   render() {
     return (
-      <div>
+      <div className={this.props.className}>
         <form onSubmit={this.onSubmitTask}>
           {this.props.formElements.map((formElement) => {
             return (
