@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../styles/GenericForm.css';
+import "../styles/GenericForm.css";
 
 class GenericForm extends Component {
   constructor() {
@@ -8,18 +8,21 @@ class GenericForm extends Component {
     this.state = {};
   }
 
-  handleChange = (e) => {
-    this.setState({});
-  };
+  // handleChange = (e) => {
+  //   this.setState({});
+  // };
 
-  onSubmitTask = (e) => {
-    e.preventDefault();
-    this.setState({});
-  };
+  // onSubmitTask = (e) => {
+  //   e.preventDefault();
+  //   this.setState({});
+  // };
+
   render() {
     return (
       <div id={this.props.id} className="GenericForm">
-        <form onSubmit={this.onSubmitTask}>
+        <form
+        // onSubmit={this.onSubmitTask}
+        >
           {this.props.formElements.map((formElement) => {
             return (
               <div id={formElement.label.for} className="GenericFormElement">
@@ -27,15 +30,17 @@ class GenericForm extends Component {
                   {formElement.label.text}
                 </label>
                 <input
-                  onChange={this.handleChange}
-                  value={formElement.input.value}
+                  // onChange={this.handleChange}
+                  // value={formElement.input.value}
                   type={formElement.input.type}
                   id={formElement.input.id}
                 ></input>
               </div>
             );
           })}
-          <button type="submit">Save</button>
+          {
+            //<button type="submit">Save</button>
+          }
         </form>
       </div>
     );

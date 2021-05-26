@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./styles/App.css";
 import GenericForm from "./components/GenericForm";
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
                 text: "Name",
               },
               input: {
-                value: "",
+                // value: "",
                 type: "text",
                 id: "inputName",
               },
@@ -30,7 +31,7 @@ class App extends Component {
                 text: "Email",
               },
               input: {
-                value: "",
+                // value: "",
                 type: "email",
                 id: "inputEmail",
               },
@@ -41,9 +42,107 @@ class App extends Component {
                 text: "Phone Number",
               },
               input: {
-                value: "",
+                // value: "",
                 type: "number",
                 id: "inputPhoneNumber",
+              },
+            },
+          ]}
+        />
+        <GenericForm
+          id="education"
+          formElements={[
+            {
+              label: {
+                for: "inputSchoolName",
+                text: "School Name",
+              },
+              input: {
+                // value: "",
+                type: "text",
+                id: "inputSchoolName",
+              },
+            },
+            {
+              label: {
+                for: "inputStudyTitle",
+                text: "Study Title",
+              },
+              input: {
+                // value: "",
+                type: "text",
+                id: "inputStudyTitle",
+              },
+            },
+            {
+              label: {
+                for: "inputDate",
+                text: "Date",
+              },
+              input: {
+                // value: "",
+                type: "date",
+                id: "inputDate",
+              },
+            },
+          ]}
+        />
+        <GenericForm
+          id="experience"
+          formElements={[
+            {
+              label: {
+                for: "inputCompanyName",
+                text: "Company Name",
+              },
+              input: {
+                // value: "",
+                type: "text",
+                id: "inputCompanyName",
+              },
+            },
+            {
+              label: {
+                for: "inputPositionTitle",
+                text: "Position Title",
+              },
+              input: {
+                // value: "",
+                type: "text",
+                id: "inputPositionTitle",
+              },
+            },
+            {
+              label: {
+                for: "inputResponsibilities",
+                text: "Responsibilities",
+              },
+              input: {
+                // value: "",
+                type: "text",
+                id: "inputResponsibilities",
+              },
+            },
+            {
+              label: {
+                for: "inputDateFrom",
+                text: "From",
+              },
+              input: {
+                // value: "",
+                type: "date",
+                id: "inputDateFrom",
+              },
+            },
+            {
+              label: {
+                for: "inputDateTo",
+                text: "To",
+              },
+              input: {
+                // value: "",
+                type: "date",
+                id: "inputDateTo",
               },
             },
           ]}

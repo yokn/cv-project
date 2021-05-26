@@ -10,3 +10,12 @@
 .GenericFormElement > * {
   margin: 5px;
 }
+
+input {
+  border: none;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  padding: none;
+  width: auto;
+}
